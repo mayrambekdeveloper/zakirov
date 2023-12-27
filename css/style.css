@@ -1,0 +1,360 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+a  {
+    text-decoration: none;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+
+}
+
+.container {
+    width: 1300px;
+    margin: 0 auto;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.logo h5 {
+color:  #0C76D8;
+font-size: 13px;
+font-weight: 700;
+text-transform: uppercase;
+}
+
+.logo p {
+color:  #2A2D46;
+font-size: 11px;
+font-weight: 400;
+}
+
+#header {
+    padding: 20px 0;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.nav {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.nav a {
+color:  #2A2D46;
+font-size: 15px;
+font-weight: 400;
+transition: .3s;
+}
+
+.nav a:hover{
+    color: #0C76D8;
+}
+
+.order {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.order a {
+color:#2A2D46;
+font-size: 13px;
+font-weight: 700;
+}
+
+.order button {
+width: 130px;
+height: 30px;
+border: 1px solid  #EB2D66;
+color:  #EB2D66;
+background: transparent;
+font-size: 11px;
+font-weight: 700;
+transition: 3s;
+cursor: pointer;
+
+}
+
+.order button:hover {
+    background: #EB2D66;
+    color: white;
+    border: 1px solid #ffffff;
+}
+
+.header-end {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.header-end ion-icon {
+    color: #EB2D66;
+    font-size: 30px;
+}
+
+.header-end select {
+color:  #2A2D46;
+font-size: 12px;
+font-weight: 700;
+border: none;
+outline: none;
+}
+
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.hero-left h1 {
+color:  #2A2D46;
+font-size: 36px;
+font-weight: 900;
+}
+
+.hero-left p {
+color:  #2A2D46;
+font-size: 16px;
+font-weight: 400;
+line-height: 145.4%;
+margin: 32px 0;
+}
+
+.hero-left button {
+width: 244px;
+height: 57px;
+background:  #EB2D66;
+border: none;
+box-shadow: 0px 7px 35px 0px rgba(235, 45, 102, 0.35);
+color: #FFF;
+font-size: 15px;
+font-weight: 900;
+cursor: pointer;
+}
+
+.hero-left button:hover {
+    transform: scale(0.9);
+}
+
+.hero-right {
+    position: relative;
+}
+
+.drone {
+    position: absolute;
+    left: -165px;
+    top: 50px;
+    animation: drone 3s linear;
+}
+
+.drone-text {
+    position: absolute;
+    bottom: 30px;
+    right: 80px;
+}
+
+.drone-text h5 {
+color: #FFF;
+font-size: 15px;
+font-weight: 900;
+
+}
+
+.drone-text p {
+color: #FFF;
+font-size: 12px;
+font-weight: 400;
+margin: 8px 0;
+}
+
+.figure {
+    clip-path: inset(5% 0 15% 10%);
+    width: 20px;
+    height: 20px;
+    background: white;
+    position: absolute;
+    bottom: 140px;
+    right: 250px;
+}
+
+@keyframes drone {
+    0%{
+        transform: translateY(-500px);
+        width: 200px;
+    }
+    50%{
+        transform: translateX(-500px);
+    }
+    80%{
+        width: 350px;
+    }
+    100%{
+        width: 700px;
+    }
+}
+
+#products {
+    padding-top: 100px;
+}
+
+.products {
+    gap: 55px;
+    display: flex;
+    align-items: center;
+}
+
+.products-nav {
+    display: flex;
+    align-items: center;
+}
+
+.products-nav a {
+color:  #2A2D46;
+font-size: 16px;
+font-weight: 400;
+margin: 0 18px;
+transition: .3s;
+}
+
+.products-nav a:hover {
+    color: #0C76D8;
+}
+
+.card {
+width: 250px;
+height: 487px;
+background: #FFF;
+box-shadow: 0 3px 15px;
+display: flex;
+justify-content: center;
+flex-direction: column;
+padding: 0 20px;
+transition: 0.3s;
+}
+
+.card:hover {
+    transform: scale(1.1);
+}
+
+.card h1 {
+color:  #2A2D46;
+font-size: 17px;
+font-weight: 900;
+}
+
+.card img {
+    padding: 15px 0;
+}
+
+.card-title {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 240px;
+    padding-bottom: 20px;
+    
+}
+
+.card-title-left p {
+color: #2C3BA0;
+font-size: 12px;
+font-weight: 400;
+}
+
+.card-title-right p {
+    color: #646986;;
+    font-size: 12px;
+    font-weight: 400;
+}
+
+.price {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 240px;
+}
+
+.price h2 {
+color: #0C76D8;
+font-size: 15px;
+font-weight: 900;
+}
+
+.price ion-icon {
+   color:  #EB2D66;
+   font-size: 27px;
+}
+
+.main-card {
+    padding-top: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+    
+    
+    
+    
+    
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        e
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    ;
+}
